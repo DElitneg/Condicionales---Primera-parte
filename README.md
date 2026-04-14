@@ -99,3 +99,51 @@ namespace ConsoleApplication2
         }
     }
 }
+
+// 4. sin terminar
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+  
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Introduzca la nota del examen . . . ");
+
+            Double nota;
+            nota = Convert.ToDouble(Console.ReadLine());
+
+            if (nota >= 7)
+            {
+                Console.WriteLine("Promocionado");
+
+                else 
+                {
+                    if (nota < 7)
+                    {
+                        if (nota > 4)
+                        {
+                            Console.WriteLine("A finales");}
+
+                            else 
+                            {
+                                if (nota < 5)
+                                {
+                                    Console.WriteLine("Recuperatorio");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
