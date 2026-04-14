@@ -37,3 +37,38 @@ namespace ConsoleApplication2
         }
     }
 }
+
+
+// 2. El Club de la Pelea (Ingreso):
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Cual es su Nombre? ");
+            String nombre;
+            nombre = Console.ReadLine();
+            Console.WriteLine("Cuantos años tenes vos? ");
+            int edad;
+            edad = Convert.ToInt32(Console.ReadLine());
+
+            if (edad >= 18)
+            {
+                Console.WriteLine("Bienvenido al club, " + nombre);
+            }
+            else if (edad < 18)
+            {
+                Console.WriteLine("Lo siento, eres muy polluelo para esto");
+            }
+        }
+    }
+}
